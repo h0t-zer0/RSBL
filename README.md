@@ -149,7 +149,6 @@ If you find our work useful, please consider citing our paper:
       journal = {Knowledge-Based Systems},
       pages = {115320},
       year = {2026},
-      issn = {0950-7051},
       doi = {https://doi.org/10.1016/j.knosys.2026.115320},
       author = {Chunyuan Chen and Weiyun Liang and Ji Du and Xinjian Wei and Bin Wang and Jing Xu and Frank Jiang},
     }
