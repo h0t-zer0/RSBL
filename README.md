@@ -52,11 +52,13 @@ python = 3.9
 
 torch = 2.0.0
 
-### 2.1. Prepare the Data
+### 2.1 Prepare the Data
 
 The training and testing datasets can be downloaded from https://github.com/GewelsJI/SINet-V2.
 
-1. Fork DINOv2 from https://github.com/facebookresearch/dinov2, and place it in the main folder like `./dinov2/...`.
+The pre-trained DINOv2 model weights can be downloaded from https://github.com/facebookresearch/dinov2.
+
+1. Fork DINOv2 from https://github.com/facebookresearch/dinov2, and place it in the main folder like `./dinov2/...`. Download the pre-trained DINOv2-base model weights, and move it to `./dinov2_vitb14_pretrain.pth`.
 
 2. Put the training data in folder `./Dataset/TrainDataset`, and put the testing data in folder `./Dataset/TestDataset`.
 
@@ -77,7 +79,7 @@ The training and testing datasets can be downloaded from https://github.com/Gewe
 
 1. Run `kmeans_sample.py` to generate the selected training samples (as a .txt file), and move this file to `./Dataset/TrainDataset/sampled_images.txt`.
 
-2. Run `train_base_model.py` to pre-train the teacher model, and use `inference.py` to get the teacher-predicted pseudo labels for unlabeled data.
+2. Run `train_base_model.py` to pre-train the teacher model, and use `inference.py` to generate the teacher-predicted pseudo labels on unlabeled data.
 
 3. Use [Grounded-SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) to generate pseudo labels for unlabeled data.
    
@@ -132,11 +134,11 @@ The training and testing datasets can be downloaded from https://github.com/Gewe
 ## 3. Pre-computed Maps
 
 + Pre-computed Maps: 
-   + 1% Training Data: [Google Drive]()
-   + 5% Training Data: [Google Drive]()
-   + 10% Training Data: [Google Drive]()
-   + 20% Training Data: [Google Drive]()
-   + 100% Training Data: [Google Drive]()
+   + 1% Training Data: [Google Drive](https://drive.google.com/drive/folders/1Ljd9nxno9qznMyEmQKohbXD8-vRZmAmu?usp=sharing)
+   + 5% Training Data: [Google Drive](https://drive.google.com/drive/folders/1tPLR9Jsnymsfv4LvDSCX3rX4_OrQOiJp?usp=sharing)
+   + 10% Training Data: [Google Drive](https://drive.google.com/drive/folders/1K2a_9zsXunrtY7Q_JHL_hl7tHqfPS-Ez?usp=sharing)
+   + 20% Training Data: [Google Drive](https://drive.google.com/drive/folders/1J5lJPwaAoSFuyk1-rW95joGVkmXEbkNe?usp=sharing)
+   + 100% Training Data: [Google Drive](https://drive.google.com/drive/folders/1vZ9489HTCsP1AMvBV-ZqWIcZdWnrTW2k?usp=sharing)
 
 ## 4. Citation
 
